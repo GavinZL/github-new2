@@ -194,7 +194,8 @@ class HTMLReportGenerator:
         """
         all_topics = []
         for project in projects:
-            all_topics.extend(project.topics)
+            if project.topics:  # Check if topics is not None or empty
+                all_topics.extend(project.topics)
         
         counter = Counter(all_topics)
         

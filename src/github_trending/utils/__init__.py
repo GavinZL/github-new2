@@ -4,7 +4,7 @@ import logging
 import sys
 from pathlib import Path
 from typing import Optional
-from .config import get_config
+from ..config import get_config
 
 
 def setup_logging(log_file: Optional[str] = None, log_level: Optional[str] = None) -> logging.Logger:
