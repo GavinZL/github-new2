@@ -1,0 +1,40 @@
+# GitHub Trending Configuration Example
+# Copy this file to config.yaml and customize
+
+github:
+  # GitHub Personal Access Token (optional, increases rate limit)
+  # Can also be set via GITHUB_TOKEN environment variable
+  api_token: ""
+  
+  # GitHub API base URL
+  api_base_url: "https://api.github.com"
+  
+  # API request timeout in seconds
+  timeout: 30
+  
+  # Maximum number of retries for failed requests
+  max_retries: 3
+
+storage:
+  # Root directory for data storage
+  data_dir: "./data"
+  
+  # CSV file encoding (utf-8-sig for Excel compatibility)
+  encoding: "utf-8-sig"
+
+report:
+  # Directory for HTML templates
+  template_dir: "./templates"
+  
+  # Auto-generate report after data collection
+  auto_generate: true
+
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: "INFO"
+  
+  # Log file path
+  file: "logs/app.log"
+  
+  # Log format
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
